@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVibe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        _
+                    }
+                },
+                fontFamily: {
+                    'roboto-mono': ['Roboto Mono', 'sans-serif'],
+                },
+
+                container: {
+                    center: true,
+                    padding: '7.5px',
+                    margin: '0 auto',
+
+                    screens: {
+                        sm: '576px',
+                        md: '768px',
+                        lg: ' 992px',
+                        xl: '1200px',
+                        xxl: '1400px',
+                    },
+                },
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="flex  justify-between items-center px-20 py-6 max-md:px-5  absolute top-0 left-0 right-0">
+        <img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b23601579d45180feb07a53dfef3998966d2cd62606035acf5cb9ae0632e00ee?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+            alt="Company logo" class="object-contain z-0 shrink-0 self-stretch my-auto aspect-[3.32] w-[166px]" />
+        <nav class="flex z-0 gap-3.5 items-center self-stretch my-auto">
+            <a href="#" aria-label="Social media link 1">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec0c0b080b23a677f856e0091f8fa2c76cb021429139210577b319e3b35039f9?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                    alt="" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+            </a>
+            <a href="#" aria-label="Social media link 2">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/bf0ec5a9914f03a4c2c3fb03d23f643f0b76252c82b6413c28be89a0d4fa0293?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                    alt="" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+            </a>
+        </nav>
+        <nav
+            class="flex overflow-hidden absolute top-2/4 left-2/4 z-0 gap-4 items-center self-start py-2 pr-8 pl-2 text-sm rounded-xl border-solid -translate-x-2/4 -translate-y-2/4 bg-stone-950 border-[3px] border-stone-900 min-w-[240px] text-stone-300 max-md:pr-5">
+            <a href="#"
+                class="gap-2.5 self-stretch px-5 py-3 my-auto font-medium text-white whitespace-nowrap rounded-lg border border-solid bg-zinc-900 border-zinc-900">Home</a>
+            <a href="#" class="self-stretch my-auto">Movies & Shows</a>
+            <a href="#" class="self-stretch my-auto">Support</a>
+            <a href="#" class="self-stretch my-auto">Subscriptions</a>
+        </nav>
+    </header>
+
+    <section>
+        <img src="./images/Group 1.png" alt="">
+        <div class="flex flex-col px-36 max-md:px-5">
+            <div class="flex flex-col  w-full text-center max-md:max-w-full">
+                <h2 class="text-5xl font-bold text-white max-md:max-w-full max-md:text-4xl">
+                    The Best Streaming Experience
+                </h2>
+                <p class="mt-[20px] mx-auto text-sm leading-5 text-neutral-400 max-w-[1000px] w-full">
+                    StreamVibe is the best streaming experience for watching your favorite movies and shows on demand,
+                    anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest
+                    blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists,
+                    so you can easily find the content you want to watch.
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <a href=""
+                    class="bg-[#E50000] text-white py-[15px] px-[52px] rounded-[8px] flex gap-x-[5px]  w-max mt-[40px]">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/52a55182567b877b456d4d012e2e670cc05f30c6acab5c31151b93b825ea1e4f?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                        class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="" />
+                    Start Watching Now
+                </a>
+            </div>
+    </section>
+
+    <section class="flex flex-col px-[80px] mt-[150px]">
+        <div class="flex flex-wrap gap-10 items-end w-full max-md:max-w-full">
+            <div class="flex flex-col flex-1 shrink basis-6 min-w-[240px] max-md:max-w-full">
+                <h2 class="text-3xl font-bold text-white max-md:max-w-full">
+                    Explore our wide variety of categories
+                </h2>
+                <p class="mt-2.5 text-base text-neutral-400 max-md:max-w-full">
+                    Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary
+                    to learn something new
+                </p>
+            </div>
+            <div class="flex gap-3 items-center p-3 rounded-xl border border-solid bg-stone-950 border-stone-900">
+                <button
+                    class="flex gap-2.5 items-center self-stretch p-2.5 my-auto w-11 h-11 rounded-md border border-solid bg-zinc-900 border-stone-900"
+                    aria-label="Previous">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1899f1f4faeb4610fe9b4aaba2244346f813c513247ce62a263a2d279411fd9?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                        class="object-contain w-6 aspect-square" alt="" />
+                </button>
+                <div class="flex gap-1 items-start self-stretch my-auto w-[69px]" role="progressbar" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="flex shrink-0 h-1 bg-red-600 rounded-[100px] w-[18px]"></div>
+                    <div class="flex flex-1 shrink w-3.5 h-1 basis-0 bg-zinc-800 rounded-[100px]"></div>
+                    <div class="flex flex-1 shrink w-3.5 h-1 basis-0 bg-zinc-800 rounded-[100px]"></div>
+                    <div class="flex flex-1 shrink w-3.5 h-1 basis-0 bg-zinc-800 rounded-[100px]"></div>
+                </div>
+                <button
+                    class="flex gap-2.5 items-center self-stretch p-2.5 my-auto w-11 h-11 rounded-md border border-solid bg-zinc-900 border-stone-900"
+                    aria-label="Next">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/a25ddd889a421c29ec5ff2fd79cb6d621cabc905d036d810fe12fc5c519539ac?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                        class="object-contain w-6 aspect-square" alt="" />
+                </button>
+            </div>
+        </div>
+        <div class="flex flex-wrap gap-5 items-start mt-16 w-full max-md:mt-10 max-md:max-w-full">
+            <article
+                class="flex flex-col flex-1 shrink p-6 rounded-xl border border-solid basis-0 bg-zinc-900 border-neutral-800 max-md:px-5">
+                <div class="flex overflow-hidden flex-col w-full min-h-[210px]">
+                    <div class="flex flex-1 gap-1.5 size-full">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/4d195498ccf8dbaa112b4d8e096290764860a5952c31e47c67646ddd31d124af?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.9] basis-0 w-[93px]"
+                            alt="Action movie poster 1" />
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e6df749c11ee7ff3ed212da8e0b505abf7e5317d3bba14ebe662124c7325d5fa?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.91] basis-0 w-[94px]"
+                            alt="Action movie poster 2" />
+                    </div>
+                    <div class="flex flex-1 gap-1.5 mt-1.5 size-full">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/797e7d6eb909a364faacfb9cbb71cccb1b08ae8c851d792609d3b1344ba9beb7?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.91] basis-0 w-[93px]"
+                            alt="Action movie poster 3" />
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3603f36037e7447aa7cd31b1d0add3ab57e59b5c6a4a2b061be96e83948c5a7c?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.92] basis-0 w-[94px]"
+                            alt="Action movie poster 4" />
+                    </div>
+                </div>
+                <div class="flex items-center w-full text-base font-semibold text-white whitespace-nowrap">
+                    <h3 class="flex-1 shrink self-stretch my-auto basis-0">Action</h3>
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b00eaf079912e10de5b7ad695401b526bc9e5566d70ce44e2fae9d940ebc37e5?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                        class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="" />
+                </div>
+            </article>
+            <article
+                class="flex flex-col flex-1 shrink p-6 rounded-xl border border-solid basis-0 bg-zinc-900 border-neutral-800 max-md:px-5">
+                <div class="flex overflow-hidden flex-col w-full min-h-[210px]">
+                    <div class="flex flex-1 gap-1.5 size-full">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/979b75615cb3b2c98fb6b1c2667357583b2513e96c91d0ea839a6ea01a1ffc67?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.9] basis-0 w-[93px]"
+                            alt="Adventure movie poster 1" />
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/31d8e39766261b75fe584d2c77392664e7076e62c65c60c5085124335614b0db?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.91] basis-0 w-[94px]"
+                            alt="Adventure movie poster 2" />
+                    </div>
+                    <div class="flex flex-1 gap-1.5 mt-1.5 size-full">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/dd57f6215089485cefa68121bad77b300f07e0adfacb2867b3bd91c5dd0bbe5e?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.91] basis-0 w-[93px]"
+                            alt="Adventure movie poster 3" />
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/08c29dcc88fe2c9e273758728cae5c04bd062476e0c0faddabc5725bc4d96e07?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.92] basis-0 w-[94px]"
+                            alt="Adventure movie poster 4" />
+                    </div>
+                </div>
+                <div class="flex items-center w-full text-base font-semibold text-white whitespace-nowrap">
+                    <h3 class="flex-1 shrink self-stretch my-auto basis-0">Adventure</h3>
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/187af6e28127cef2adc8520d9b9991cd6a09e4d34e2071f469c99224bc7569e2?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                        class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="" />
+                </div>
+            </article>
+            <article
+                class="flex flex-col flex-1 shrink p-6 rounded-xl border border-solid basis-0 bg-zinc-900 border-neutral-800 max-md:px-5">
+                <div class="flex overflow-hidden flex-col w-full min-h-[210px]">
+                    <div class="flex flex-1 gap-1.5 size-full">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6a1239dfdd3838ae682a75904933f26271e12ff3e0299f594c0bac43340deef0?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.9] basis-0 w-[93px]"
+                            alt="Comedy movie poster 1" />
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/63448f9ef322c503ba1928cdd5fd2446e3c3c325a3bf8c51db7a91e28d02b99a?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.9] basis-0 w-[93px]"
+                            alt="Comedy movie poster 2" />
+                    </div>
+                    <div class="flex flex-1 gap-1.5 mt-1.5 size-full">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6ce95275d0a92b01d3eb479a0061c49c09e6e910d4b14192c8b4a0418ef3765e?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.91] basis-0 w-[93px]"
+                            alt="Comedy movie poster 3" />
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3036f8a3aa66411bfafdb28023917dfdcf21863a884eaeba3f5e11df7b799025?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.91] basis-0 w-[93px]"
+                            alt="Comedy movie poster 4" />
+                    </div>
+                </div>
+                <div class="flex items-center w-full text-base font-semibold text-white whitespace-nowrap">
+                    <h3 class="flex-1 shrink self-stretch my-auto basis-0">Comedy</h3>
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7494b6a0c897528b1619591057acdf6089d6540064a7362d9cd195aecd4ea19?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                        class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="" />
+                </div>
+            </article>
+            <article
+                class="flex flex-col flex-1 shrink p-6 rounded-xl border border-solid basis-0 bg-zinc-900 border-neutral-800 max-md:px-5">
+                <div class="flex overflow-hidden flex-col w-full min-h-[210px]">
+                    <div class="flex flex-1 gap-1.5 size-full">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9be42b2e1351fb34af583864f8e24873f4c2a12b0cff926af8fee2ff56036571?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.91] basis-0 w-[94px]"
+                            alt="Drama movie poster 1" />
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/31c1011e73ca054fc356fb23d020bc9cb382013cde9f356edcb98a8edc2d788f?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.9] basis-0 w-[93px]"
+                            alt="Drama movie poster 2" />
+                    </div>
+                    <div class="flex flex-1 gap-1.5 mt-1.5 size-full">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f146d12ba0493c68ded55ceca6f8a91801ed7326c2f3c66ab73d673b8aef7f3a?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.92] basis-0 w-[94px]"
+                            alt="Drama movie poster 3" />
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/255802d8d15d9958328664cf9035800f84932a1fcdb9ebad9eaf251d8aaf8cb9?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.91] basis-0 w-[93px]"
+                            alt="Drama movie poster 4" />
+                    </div>
+                </div>
+                <div class="flex items-center w-full text-base font-semibold text-white whitespace-nowrap">
+                    <h3 class="flex-1 shrink self-stretch my-auto basis-0">Drama</h3>
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed98fd9d7c0b7e60fdf12a7e9b4c9518eef6f454cb5309c28db36bfc1afb3a2c?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                        class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="" />
+                </div>
+            </article>
+            <article
+                class="flex flex-col flex-1 shrink p-6 rounded-xl border border-solid basis-0 bg-zinc-900 border-neutral-800 max-md:px-5">
+                <div class="flex overflow-hidden flex-col w-full min-h-[210px]">
+                    <div class="flex flex-1 gap-1.5 size-full">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/4ee2fe54330349dca9d6e3388e9f3730d4cbe0ba2d1aa0597927899f8c0dbe49?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.91] basis-0 w-[94px]"
+                            alt="Horror movie poster 1" />
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c50c127bdc4543bda7180366916115189e9a80c48514d99018db1da3cdb6a690?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.9] basis-0 w-[93px]"
+                            alt="Horror movie poster 2" />
+                    </div>
+                    <div class="flex flex-1 gap-1.5 mt-1.5 size-full">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/161da797ba590322469cb10fa29ddea51697c71d7ee7184c485f9539cc607a65?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.92] basis-0 w-[94px]"
+                            alt="Horror movie poster 3" />
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/21226f4241bdf1c0b527f6fcb6f35e37e4b66150bfa96b0d8b31056ac23c8000?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain flex-1 shrink rounded-md aspect-[0.91] basis-0 w-[93px]"
+                            alt="Horror movie poster 4" />
+                    </div>
+                </div>
+                <div class="flex items-center w-full text-base font-semibold text-white whitespace-nowrap">
+                    <h3 class="flex-1 shrink self-stretch my-auto basis-0">Horror</h3>
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/7a5945de6cfe59a447c08a43d67244af36b493841db93efd0fc3b17bd4f12618?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                        class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" alt="" />
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="flex flex-col mt-[120px] px-[80px]">
+        <div class="flex flex-col pr-36 w-full max-md:pr-5 max-md:max-w-full">
+            <h2 class="text-3xl font-bold text-white max-md:max-w-full">
+                We Provide you streaming experience across various devices.
+            </h2>
+            <p class="mt-2.5 text-base leading-6 text-neutral-400 max-md:max-w-full">
+                With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is
+                designed to be compatible with a wide range of devices, ensuring that you never miss a moment of
+                entertainment.
+            </p>
+        </div>
+        <div class="flex flex-col mt-16 w-full max-md:mt-10 max-md:max-w-full">
+            <div class="flex flex-wrap gap-5 items-start w-full max-md:max-w-full">
+                <article
+                    class="flex flex-col flex-1 shrink p-10 rounded-xl border border-solid basis-0 border-neutral-800 min-w-[240px] max-md:px-5">
+                    <div class="flex gap-3 items-center w-full">
+                        <div
+                            class="flex gap-2.5 items-center self-stretch p-3 my-auto rounded-xl border border-solid bg-neutral-900 border-stone-900 h-[54px] w-[54px]">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/1735d5ec85dc47bfdb34b08e8715d0ab22e5d359828b6323060348d2e0afdc31?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                                class="object-contain aspect-square w-[30px]" alt="Smartphone icon" />
+                        </div>
+                        <h3 class="flex-1 shrink self-stretch my-auto text-xl font-semibold text-white basis-6">
+                            Smartphones
+                        </h3>
+                    </div>
+                    <p class="mt-6 text-base leading-6 text-neutral-400">
+                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google
+                        Play Store or the Apple App Store
+                    </p>
+                </article>
+                <article
+                    class="flex flex-col flex-1 shrink p-10 rounded-xl border border-solid basis-0 border-neutral-800 min-w-[240px] max-md:px-5">
+                    <div class="flex gap-3 items-center w-full">
+                        <div
+                            class="flex gap-2.5 items-center self-stretch p-3 my-auto rounded-xl border border-solid bg-neutral-900 border-stone-900 h-[54px] w-[54px]">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/abcbdceeea077346065910533cb97696ffb209a875dbc367a764394eebf73de7?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                                class="object-contain aspect-square w-[30px]" alt="Tablet icon" />
+                        </div>
+                        <h3 class="flex-1 shrink self-stretch my-auto text-xl font-semibold text-white basis-6">
+                            Tablet
+                        </h3>
+                    </div>
+                    <p class="mt-6 text-base leading-6 text-neutral-400">
+                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google
+                        Play Store or the Apple App Store
+                    </p>
+                </article>
+                <article
+                    class="flex flex-col flex-1 shrink p-10 rounded-xl border border-solid basis-0 border-neutral-800 min-w-[240px] max-md:px-5">
+                    <div class="flex gap-3 items-center w-full">
+                        <div
+                            class="flex gap-2.5 items-center self-stretch p-3 my-auto rounded-xl border border-solid bg-neutral-900 border-stone-900 h-[54px] w-[54px]">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/c11678ed04f27214a574b3d8912700f271572e2229a3577eb212015497f67e22?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                                class="object-contain aspect-square w-[30px]" alt="Smart TV icon" />
+                        </div>
+                        <h3 class="flex-1 shrink self-stretch my-auto text-xl font-semibold text-white basis-6">
+                            Smart TV
+                        </h3>
+                    </div>
+                    <p class="mt-6 text-base leading-6 text-neutral-400">
+                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google
+                        Play Store or the Apple App Store
+                    </p>
+                </article>
+            </div>
+            <div class="flex flex-wrap gap-5 items-start mt-5 w-full max-md:max-w-full">
+                <article
+                    class="flex flex-col flex-1 shrink p-10 rounded-xl border border-solid basis-0 border-neutral-800 min-w-[240px] max-md:px-5">
+                    <div class="flex gap-3 items-center w-full">
+                        <div
+                            class="flex gap-2.5 items-center self-stretch p-3 my-auto rounded-xl border border-solid bg-neutral-900 border-stone-900 h-[54px] w-[54px]">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/aef3ecb6885e41cbf66453adb83db32f64953ed0b749871a8c16a44dc8589f87?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                                class="object-contain aspect-square w-[30px]" alt="Laptop icon" />
+                        </div>
+                        <h3 class="flex-1 shrink self-stretch my-auto text-xl font-semibold text-white basis-6">
+                            Laptops
+                        </h3>
+                    </div>
+                    <p class="mt-6 text-base leading-6 text-neutral-400">
+                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google
+                        Play Store or the Apple App Store
+                    </p>
+                </article>
+                <article
+                    class="flex flex-col flex-1 shrink p-10 rounded-xl border border-solid basis-0 border-neutral-800 min-w-[240px] max-md:px-5">
+                    <div class="flex gap-3 items-center w-full">
+                        <div
+                            class="flex gap-2.5 items-center self-stretch p-3 my-auto rounded-xl border border-solid bg-neutral-900 border-stone-900 h-[54px] w-[54px]">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a97bf6d53e8989197a06e971cce49368c50e7368be7f44aaebfbe4eb2811d57?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                                class="object-contain aspect-square w-[30px]" alt="Gaming Console icon" />
+                        </div>
+                        <h3 class="flex-1 shrink self-stretch my-auto text-xl font-semibold text-white basis-6">
+                            Gaming Consoles
+                        </h3>
+                    </div>
+                    <p class="mt-6 text-base leading-6 text-neutral-400">
+                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google
+                        Play Store or the Apple App Store
+                    </p>
+                </article>
+                <article
+                    class="flex flex-col flex-1 shrink p-10 rounded-xl border border-solid basis-0 border-neutral-800 min-w-[240px] max-md:px-5">
+                    <div class="flex gap-3 items-center w-full">
+                        <div
+                            class="flex gap-2.5 items-center self-stretch p-3 my-auto rounded-xl border border-solid bg-neutral-900 border-stone-900 h-[54px] w-[54px]">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/448708e0a6ee8ca991afc8aa9823d41f77d0782e9db452f474876fcd9d64e16f?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                                class="object-contain aspect-square w-[30px]" alt="VR Headset icon" />
+                        </div>
+                        <h3 class="flex-1 shrink self-stretch my-auto text-xl font-semibold text-white basis-6">
+                            VR Headsets
+                        </h3>
+                    </div>
+                    <p class="mt-6 text-base leading-6 text-neutral-400">
+                        StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google
+                        Play Store or the Apple App Store
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col px-[80px] mt-[120px]">
+        <div class="flex flex-wrap gap-10 items-end w-full max-md:max-w-full">
+            <div class="flex flex-col flex-1 shrink basis-10 min-w-[240px] max-md:max-w-full">
+                <h2 class="text-3xl font-bold text-white max-md:max-w-full">Frequently Asked Questions</h2>
+                <p class="mt-2.5 text-base text-neutral-400 max-md:max-w-full">Got questions? We've got answers! Check
+                    out our FAQ section to find answers to the most common questions about StreamVibe.</p>
+            </div>
+            <button class="gap-2.5 px-5 py-3.5 text-sm font-semibold text-white bg-red-600 rounded-md">Ask a
+                Question</button>
+        </div>
+        <div class="flex flex-wrap gap-10 items-start mt-16 w-full max-md:mt-10 max-md:max-w-full">
+            <div class="flex flex-col flex-1 shrink basis-0 min-w-[240px] max-md:max-w-full">
+                <details
+                    class="flex flex-wrap gap-4 items-start p-6 w-full max-md:px-5 max-md:max-w-full transition  duration-300 ease-in-out">
+                    <summary class="flex items-center w-full cursor-pointer  transition  duration-300 ease-in-out">
+                        <span
+                            class="p-4 text-base font-semibold text-white whitespace-nowrap rounded-lg border border-solid bg-stone-900 border-neutral-800">01</span>
+                        <h3 class="flex-1 ml-4 text-xl font-medium text-white max-md:max-w-full">What is StreamVibe?
+                        </h3>
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/95876ac08aa96485606df705eb33c57dc5fc4cddaf9ac1702f5a5aeeae050cc3?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            alt="" class="object-contain shrink-0 w-6 aspect-square" />
+                    </summary>
+                    <p
+                        class="mt-3.5 text-base leading-6 text-neutral-400 max-md:max-w-full  transition  duration-300 ease-in-out">
+                        StreamVibe is a streaming
+                        service that allows you to watch movies and shows on demand.</p>
+                </details>
+
+                <img src="./images/Line.png" alt="">
+                <details class="flex flex-wrap gap-4 items-center p-6 w-full text-white max-md:px-5 max-md:max-w-full">
+                    <summary class="flex items-center w-full cursor-pointer">
+                        <span
+                            class="flex items-center px-4 my-auto text-base font-semibold whitespace-nowrap rounded-lg border border-solid bg-stone-900 border-neutral-800 h-[53px] w-[53px]">02</span>
+                        <h3 class="flex-1 ml-4 self-stretch my-auto text-xl font-medium max-md:max-w-full">How much does
+                            StreamVibe cost?</h3>
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cf9933032ca63170bff0dd6c52576d933d808a230a2870e553ed07490d7405c?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            alt="" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                    </summary>
+                </details>
+                <img src="./images/Line.png" alt="">
+                <details class="flex flex-wrap gap-4 items-center p-6 w-full text-white max-md:px-5 max-md:max-w-full">
+                    <summary class="flex items-center w-full cursor-pointer">
+                        <span
+                            class="flex items-center px-4 my-auto text-base font-semibold whitespace-nowrap rounded-lg border border-solid bg-stone-900 border-neutral-800 h-[53px] w-[53px]"">03</span>
+                        <h3 class=" flex-1 ml-4 self-stretch my-auto text-xl font-medium max-md:max-w-full">What
+                            content
+                            is available on StreamVibe?</h3>
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cf9933032ca63170bff0dd6c52576d933d808a230a2870e553ed07490d7405c?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                                alt="" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                    </summary>
+                </details>
+                <img src="./images/Line.png" alt="">
+                <details class="flex flex-wrap gap-4 items-center p-6 w-full text-white max-md:px-5 max-md:max-w-full">
+                    <summary class="flex items-center w-full cursor-pointer">
+                        <span
+                            class="flex items-center px-4 my-auto text-base font-semibold whitespace-nowrap rounded-lg border border-solid bg-stone-900 border-neutral-800 h-[53px] w-[53px]"">04</span>
+                        <h3 class=" flex-1 ml-4 self-stretch my-auto text-xl font-medium max-md:max-w-full">How can I
+                            watch StreamVibe?</h3>
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cf9933032ca63170bff0dd6c52576d933d808a230a2870e553ed07490d7405c?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                                alt="" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                    </summary>
+                </details>
+            </div>
+            <div class="flex flex-col flex-1 shrink text-white basis-0 min-w-[240px] max-md:max-w-full">
+                <details class="flex flex-wrap gap-4 items-center p-6 w-full max-md:px-5 max-md:max-w-full">
+                    <summary class="flex items-center w-full cursor-pointer">
+                        <span
+                            class="flex items-center px-4 my-auto text-base font-semibold whitespace-nowrap rounded-lg border border-solid bg-stone-900 border-neutral-800 h-[53px] w-[53px]"">05</span>
+                        <h3 class=" flex-1 ml-4 self-stretch my-auto text-xl font-medium max-md:max-w-full">How do I
+                            sign
+                            up for StreamVibe?</h3>
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cf9933032ca63170bff0dd6c52576d933d808a230a2870e553ed07490d7405c?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                                alt="" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                    </summary>
+                </details>
+                <img src="./images/Line.png" alt="">
+                <details class="flex flex-wrap gap-4 items-center p-6 w-full max-md:px-5 max-md:max-w-full">
+                    <summary class="flex items-center w-full cursor-pointer">
+                        <span
+                            class="flex items-center px-4 my-auto text-base font-semibold whitespace-nowrap rounded-lg border border-solid bg-stone-900 border-neutral-800 h-[54px] w-[54px]">06</span>
+                        <h3 class="flex-1 ml-4 self-stretch my-auto text-xl font-medium max-md:max-w-full">What is the
+                            StreamVibe free trial?</h3>
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cf9933032ca63170bff0dd6c52576d933d808a230a2870e553ed07490d7405c?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            alt="" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                    </summary>
+                </details>
+                <img src="./images/Line.png" alt="">
+                <details class="flex flex-wrap gap-4 items-center p-6 w-full max-md:px-5 max-md:max-w-full">
+                    <summary class="flex items-center w-full cursor-pointer">
+                        <span
+                            class="self-stretch p-4 my-auto text-base font-semibold whitespace-nowrap rounded-lg border border-solid bg-stone-900 border-neutral-800">07</span>
+                        <h3 class="flex-1 ml-4 self-stretch my-auto text-xl font-medium max-md:max-w-full">How do I
+                            contact StreamVibe customer support?</h3>
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cf9933032ca63170bff0dd6c52576d933d808a230a2870e553ed07490d7405c?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            alt="" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                    </summary>
+                </details>
+                <img src="./images/Line.png" alt="">
+                <details class="flex flex-wrap gap-4 items-center p-6 w-full max-md:px-5 max-md:max-w-full">
+                    <summary class="flex items-center w-full cursor-pointer">
+                        <span
+                            class="flex items-center px-4 my-auto text-base font-semibold whitespace-nowrap rounded-lg border border-solid bg-stone-900 border-neutral-800 h-[53px] w-[53px]"">08</span>
+                        <h3 class=" flex-1 ml-4 self-stretch my-auto text-xl font-medium max-md:max-w-full">What are
+                            the
+                            StreamVibe payment methods?</h3>
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cf9933032ca63170bff0dd6c52576d933d808a230a2870e553ed07490d7405c?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                                alt="" class="object-contain shrink-0 self-stretch my-auto w-6 aspect-square" />
+                    </summary>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col px-[80px] mt-[120px]">
+        <div class="flex flex-col ">
+            <div class="flex flex-wrap gap-10 items-end w-full max-md:max-w-full">
+                <div class="flex flex-col flex-1 shrink basis-4 min-w-[240px] max-md:max-w-full">
+                    <h2 class="text-3xl font-bold text-white max-md:max-w-full">
+                        Choose the plan that's right for you
+                    </h2>
+                    <p class="mt-2.5 text-base leading-6 text-neutral-400 max-md:max-w-full">
+                        Join StreamVibe and select from our flexible subscription options tailored to suit your viewing
+                        preferences. Get ready for non-stop entertainment!
+                    </p>
+                </div>
+                <nav class="flex items-center p-2 text-sm font-medium whitespace-nowrap rounded-lg border border-solid bg-stone-950 border-neutral-800"
+                    role="tablist">
+                    <button class="gap-2.5 self-stretch px-5 py-3 my-auto text-white rounded-md bg-stone-900" role="tab"
+                        aria-selected="true">Monthly</button>
+                    <button class="gap-2.5 self-stretch px-5 py-3 my-auto rounded-[100px] text-neutral-400" role="tab"
+                        aria-selected="false">Yearly</button>
+                </nav>
+            </div>
+            <div class="flex flex-wrap gap-5 items-start mt-16 w-full max-md:mt-10 max-md:max-w-full">
+                <article
+                    class="flex flex-col flex-1 shrink p-10 rounded-xl border border-solid basis-0 bg-zinc-900 border-neutral-800 min-w-[240px] max-md:px-5">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Basic Plan</h3>
+                        <p class="mt-3 text-base leading-6 text-neutral-400">
+                            Enjoy an extensive library of movies and shows, featuring a range of content, including
+                            recently
+                            released titles.
+                        </p>
+                    </div>
+                    <p class="flex gap-0.5 justify-center items-end self-start mt-10 leading-none whitespace-nowrap">
+                        <span class="text-3xl font-semibold text-white">$9.99</span>
+                        <span class="text-base font-medium text-neutral-400">/month</span>
+                    </p>
+                    <div class="flex gap-3 items-start mt-10 w-full text-sm font-semibold text-white">
+                        <button
+                            class="flex-1 shrink gap-2.5 self-stretch px-5 py-3.5 rounded-md border border-solid bg-neutral-900 border-neutral-800">
+                            Start Free Trial
+                        </button>
+                        <button class="flex-1 shrink gap-2.5 self-stretch px-5 py-3.5 bg-red-600 rounded-md">
+                            Choose Plan
+                        </button>
+                    </div>
+                </article>
+                <article
+                    class="flex flex-col flex-1 shrink p-10 rounded-xl border border-solid basis-0 bg-zinc-900 border-neutral-800 min-w-[240px] max-md:px-5">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Standard Plan</h3>
+                        <p class="mt-3 text-base leading-6 text-neutral-400">
+                            Access to a wider selection of movies and shows, including most new releases and exclusive
+                            content
+                        </p>
+                    </div>
+                    <p class="flex gap-0.5 justify-center items-end self-start mt-10 leading-none whitespace-nowrap">
+                        <span class="text-3xl font-semibold text-white">$12.99</span>
+                        <span class="text-base font-medium text-neutral-400">/month</span>
+                    </p>
+                    <div class="flex gap-3 items-start mt-10 w-full text-sm font-semibold text-white">
+                        <button
+                            class="flex-1 shrink gap-2.5 self-stretch px-5 py-3.5 rounded-md border border-solid bg-neutral-900 border-neutral-800">
+                            Start Free Trial
+                        </button>
+                        <button class="flex-1 shrink gap-2.5 self-stretch px-5 py-3.5 bg-red-600 rounded-md">
+                            Choose Plan
+                        </button>
+                    </div>
+                </article>
+                <article
+                    class="flex flex-col flex-1 shrink p-10 rounded-xl border border-solid basis-0 bg-zinc-900 border-neutral-800 min-w-[240px] max-md:px-5">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Premium Plan</h3>
+                        <p class="mt-3 text-base leading-6 text-neutral-400">
+                            Access to a widest selection of movies and shows, including all new releases and Offline
+                            Viewing
+                        </p>
+                    </div>
+                    <p class="flex gap-0.5 justify-center items-end self-start mt-10 leading-none whitespace-nowrap">
+                        <span class="text-3xl font-semibold text-white">$14.99</span>
+                        <span class="text-base font-medium text-neutral-400">/month</span>
+                    </p>
+                    <div class="flex gap-3 items-start mt-10 w-full text-sm font-semibold text-white">
+                        <button
+                            class="flex-1 shrink gap-2.5 self-stretch px-5 py-3.5 rounded-md border border-solid bg-neutral-900 border-neutral-800">
+                            Start Free Trial
+                        </button>
+                        <button class="flex-1 shrink gap-2.5 self-stretch px-5 py-3.5 bg-red-600 rounded-md">
+                            Choose Plan
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-[80px] mt-[120px]">
+        <img src="./images/Group 2.svg" class="sm:block hidden" alt="">
+        <img src=".images/Container.svg" class="sm:hidden block" alt="">
+    </section>
+
+
+    <footer class="flex flex-col  px-20 pt-20 pb-10 bg-stone-950 max-md:px-5 mt-[120px]">
+        <nav class="flex flex-wrap gap-5 items-start w-full max-md:max-w-full">
+            <div class="flex flex-col flex-1 shrink whitespace-nowrap basis-0">
+                <h2 class="text-lg font-semibold text-white">Home</h2>
+                <ul class="flex flex-col mt-5 w-full text-base font-medium text-neutral-400">
+                    <li><a href="#categories">Categories</a></li>
+                    <li class="mt-2.5"><a href="#devices">Devices</a></li>
+                    <li class="mt-2.5"><a href="#pricing">Pricing</a></li>
+                    <li class="mt-2.5"><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col flex-1 shrink basis-0">
+                <h2 class="text-lg font-semibold text-white">Movies</h2>
+                <ul class="flex flex-col mt-5 w-full text-base font-medium text-neutral-400">
+                    <li><a href="#movie-genres">Genres</a></li>
+                    <li class="mt-2.5"><a href="#trending-movies">Trending</a></li>
+                    <li class="mt-2.5"><a href="#new-release-movies">New Release</a></li>
+                    <li class="mt-2.5"><a href="#popular-movies">Popular</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col flex-1 shrink basis-0">
+                <h2 class="text-lg font-semibold text-white">Shows</h2>
+                <ul class="flex flex-col mt-5 w-full text-base font-medium text-neutral-400">
+                    <li><a href="#show-genres">Genres</a></li>
+                    <li class="mt-2.5"><a href="#trending-shows">Trending</a></li>
+                    <li class="mt-2.5"><a href="#new-release-shows">New Release</a></li>
+                    <li class="mt-2.5"><a href="#popular-shows">Popular</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col flex-1 shrink basis-0">
+                <h2 class="text-lg font-semibold text-white">Support</h2>
+                <a href="#contact" class="mt-5 text-base font-medium text-neutral-400">Contact Us</a>
+            </div>
+            <div class="flex flex-col flex-1 shrink whitespace-nowrap basis-0">
+                <h2 class="text-lg font-semibold text-white">Subscription</h2>
+                <ul class="flex flex-col mt-5 w-full text-base font-medium text-neutral-400">
+                    <li><a href="#plans">Plans</a></li>
+                    <li class="mt-2.5"><a href="#features">Features</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col flex-1 shrink basis-0">
+                <h2 class="text-lg font-semibold text-white">Connect With Us</h2>
+                <div class="flex gap-2.5 items-start self-start mt-5">
+                    <a href="#facebook"
+                        class="flex gap-2.5 items-center p-3 w-11 h-11 rounded-md border border-solid bg-zinc-900 border-neutral-800"
+                        aria-label="Facebook">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a8c93f803a941015643a234f5ad6d0d7aa02192fbd14d0065bec721548848bcd?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain w-5 aspect-square" alt="Facebook icon" />
+                    </a>
+                    <a href="#twitter"
+                        class="flex gap-2.5 items-center p-3 w-11 h-11 rounded-md border border-solid bg-zinc-900 border-neutral-800"
+                        aria-label="Twitter">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/fd798fef98722a9c9d6411078b8da6303c93cbe0704507413434ca41b454498e?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain w-5 aspect-square" alt="Twitter icon" />
+                    </a>
+                    <a href="#instagram"
+                        class="flex gap-2.5 items-center p-3 w-11 h-11 rounded-md border border-solid bg-zinc-900 border-neutral-800"
+                        aria-label="Instagram">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/882ec00ce1a7d2988aaf21fcc5e7c3c7f90fb5e2a67f538c92660f671e44a98c?placeholderIfAbsent=true&apiKey=c32b3133450e4cb2a38220a22821614d"
+                            class="object-contain w-5 aspect-square" alt="Instagram icon" />
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="flex flex-col mt-20 w-full text-sm text-neutral-400 max-md:mt-10 max-md:max-w-full">
+            <hr class="w-full border border-solid bg-neutral-800 border-neutral-800 min-h-[1px] max-md:max-w-full" />
+            <div class="flex flex-wrap gap-10 justify-between items-center mt-5 w-full max-md:max-w-full">
+                <p class="self-stretch my-auto">&copy; 2023 streamvib, All Rights Reserved</p>
+                <nav class="flex gap-4 items-start self-stretch my-auto min-w-[240px]">
+                    <a href="#terms">Terms of Use</a>
+                    <span
+                        class="shrink-0 self-stretch w-0 border border-solid bg-neutral-800 border-neutral-800 h-[21px]"
+                        aria-hidden="true"></span>
+                    <a href="#privacy">Privacy Policy</a>
+                    <span
+                        class="shrink-0 self-stretch w-0 border border-solid bg-neutral-800 border-neutral-800 h-[21px]"
+                        aria-hidden="true"></span>
+                    <a href="#cookie">Cookie Policy</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./javascript.js"></script>
+</body>
+
+</html>
